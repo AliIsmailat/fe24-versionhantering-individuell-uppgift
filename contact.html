@@ -1,55 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="icon" href="./images/console-controller.png">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style/style.css" />
+        <link rel="icon" href="./images/console-controller.png" />
+        <title>PLAY NO PAY</title>
+    </head>
+    <body>
+        <nav class="navbar">
+            <ul class="navbar-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="freegames.html">FREE TO PLAY GAMES</a></li>
+                <li class="active"><a href="contact.html">CONTACT US</a></li>
+            </ul>
+        </nav>
 
-    <title>PLAY NO PAY</title>
-</head>
-<body>
-    
+        <h1 id="contact-us">Contact us</h1>
 
+        <div id="contact-us-wrapper">
+            <div id="contact-us-container" style="border-style: dashed ; border-width: 0.2rem;">
+                <form action="/submit_form" method="POST" >
+                    <label for="name" id="name-label">Your Name</label>
+                    <input placeholder="Radahn" type="text" id="name-input" name="name" required />
 
-    <nav class="navbar">
+                    <label for="email" id="email-label">Your Email</label>
+                    <input placeholder="foolish.tarnished@outlook.com" type="email" id="email-input" name="email" required />
 
-        <ul class="navbar-links">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="freegames.html">FREE TO PLAY GAMES</a></li>
-            <li class="active"><a href="contact.html">CONTACT US</a></li>
+                    <label for="message" id="message-label">Your Message</label>
+                    <textarea placeholder="What's on your mind?" id="message-textarea" name="message" rows="4" required></textarea>
 
-        </ul>
-
-    </nav>
-
-
-
-    <h1 id="contact-us">Contact us</h1>
-
-
-    <div id="contact-us-wrapper">
-
-        
-        <div id="contact-us-container">
-            
-            <form action="/submit_form" method="POST">
-                
-                <label for="name" id="name-label">Your Name</label>
-                <input placeholder="Radahn" type="text" id="name-input" name="name" required>
-                
-                <label for="email" id="email-label">Your Email</label>
-                <input placeholder="foolish.tarnished@outlook.com" type="email" id="email-input" name="email" required>
-                
-                <label for="message" id="message-label">Your Message</label>
-                <textarea placeholder="What's on your mind?" id="message-textarea" name="message" rows="4" required></textarea>
-                
-                <button type="submit" id="submit-button">Send Message</button>
-            </form>
-            
+                    <button type="submit" id="submit-button">Send Message</button>
+                </form>
+            </div>
         </div>
-        
-    </div>
-        
-</body>
+    </body>
 </html>
